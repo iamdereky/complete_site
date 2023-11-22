@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/339favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nobile">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Recipes</title>
+</head>
+<body id="body">
+    <a href="#main" id = "skip">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li class="mobile-nav"><a href="index.html">Home/Pets</a></li>
+            <li class="mobile-nav"><a class="active" href="recipes.html">Recipes</a></li>
+            <li class="mobile-nav"><a href="travel.html">Travel</a></li>
+
+            <li class="dropdown">
+                <a class="dropbtn" href="index.html">Home/Pets</a>
+                <div class="dropdown-content">
+                    <a href="index.html#cheeto">Cheeto</a>
+                    <a href="index.html#luna">Luna</a>
+                    <a href="index.html#jax">Jax</a>
+                    <a href="index.html#biscuit">Biscuit</a>
+                    <a href="index.html#leo">Leo</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a class="dropbtn active" href="recipes.html">Recipes</a>
+                <div class="dropdown-content">
+                    <a href="recipes.html#sushi-bake">Sushi Bake</a>
+                    <a href="recipes.html#fried-rice">Dead Simple Fried Rice</a>
+                    <a href="recipes.html#tofu">Mapo Tofu</a>
+                    <a href="recipes.html#crunchwrap">Crunchwrap Supreme</a>
+                    <a href="recipes.html#cookies">Double Chocolate Cookies</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a class="dropbtn" href="travel.html">Travel</a>
+                <div class="dropdown-content">
+                    <a href="travel.html#giza">Giza</a>
+                    <a href="travel.html#paris">Paris</a>
+                    <a href="travel.html#dubai">Dubai</a>
+                    <a href="travel.html#newyorkcity">New York City</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <header><h1>Recipes</h1></header>
+    <main id = "main">
+        <div class="recipe">
+            <h2 id="sushi-bake">Sushi Bake</h2>
+            <div class="tablet-recipe">
+                <div class="recipe-grid">
+                    <span>Origin: Asian</span>
+                    <span>Source: Own Recipe</span>
+                    <span>Category: Main Dish</span>
+                </div>
+
+                <div class="recipe-img"><img src="images/sushiBake.jpeg" width="400" alt=""></div>
+                <p>Do you want easy, quick way to enjoy sushi without having to do all of the work? Try to make our sushi bake, which
+                    takes 10 minutes to assemble and 20 minutes to bake in the oven. Our recipe feeds 8 people.
+                </p>
+            </div>
+
+            <div class="like-container">
+                <button id="likeButton1" onclick="toggleLike(0)">Like</button>
+                <span id="likeCount1">0</span>
+            </div>
+
+            <div class="desktop-recipe-lists">
+                <div class="recipe-ingredients">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="list">
+                        <li>1 avocado</li>
+                        <li>1/2 cup soon sauce</li>
+                        <li>2 cups of rice</li>
+                        <li>1 tablespoon of rice vinegar</li>
+                        <li>3 tablespoons of mayo</li>
+                        <li>1 8 oz package of imitation crab</li>
+                        <li>1 medium piece of salmon</li>
+                        <li>1 cucumber</li>
+                        <li>3 tablespoons of sriracha</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-steps">
+                    <h3>Recipe Steps</h3>
+                    <ol class="list">
+                        <li>Preheat oven to 350 degrees</li>
+                        <li>Make rice. Mix rice vinegar into rice after it is cooked</li>
+                        <li>Lay out all of the rice at the bottom of a large baking dish</li>
+                        <li>Lay out the imitation crab and cucumber on top of the rice</li>
+                        <li>Mix the imitation crab and 2 TBSP mayo into a crab salad</li>
+                        <li>Smear the crab salad onto the next layer</li>
+                        <li>Slice the avocado and lay those on the top of the dish</li>
+                        <li>Pour the rest of the mayo and sriracha on top</li>
+                        <li>Bake for 20 minutes</li>
+                        <li>Enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Additional Food Images</h3>
+            <div class="recipe-photos">
+            <img class="pic3" src="images/rice.jpeg" width="200" alt="Make your rice and mix the rice vinegar into it">
+            <img class="pic2" src="images/avocado.jpeg" width="200" alt="Sliced avocado from step 7">
+            <img class="pic1" src="images/SalmonSushiBake-scaled.webp" width="200" alt="Sushi Bake in the baking dish ready to serve">
+            </div>
+            <!-- Ethan Tai, Joshua Vijayasegar -->
+        </div>
+        <div class="recipe">
+            <h2 id="fried-rice">Dead Simple Fried Rice</h2>
+            <div class="tablet-recipe">
+                <div class="recipe-grid">
+                    <span>Origin: American/East Asian</span>
+                    <span>Source: Own Recipe</span>
+                    <span>Category: Main Dish</span>
+                </div>
+
+                <div class="recipe-img"><img src="images/dead-simple-fried-rice-primary.jpg" width="400" alt=""></div>
+                <p>This Dead Simple Fried Rice recipe is an incredibly modular and tasty dish. At its core, it's just rice, vegetables,
+                    protein, and oil. As such, the dish can be modified to serve as many or as few people as needed with a wide variety
+                    of food preferences. Experimentation with what specific ingredients you enjoy the most will unlock the full
+                    potential of this dish.
+                </p>
+            </div>
+
+            <div class="like-container">
+                <button id="likeButton2" onclick="toggleLike(1)">Like</button>
+                <span id="likeCount2">0</span>
+            </div>
+
+            <div class="desktop-recipe-lists">
+                <div class="recipe-ingredients">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="list">
+                        <li>Long-grain white rice</li>
+                        <li>Frozen vegetables</li>
+                        <li>Eggs</li>
+                        <li>(Optional) Milk</li>
+                        <li>Oil of choice</li>
+                        <li>Salt</li>
+                        <li>Soy sauce</li>
+                        <li>(Optional) Additional sauce (curry sauce/paste, spicy teriyaki sauce, and sweet chili sauce are great options)</li>
+                        <li>(Optional) Additional pre-cooked/fast-cooking protein of choice (nuts, sausage, tofu, and bacon are great options)</li>
+                        <li>(Optional) Additional fresh vegetables (green onions, celery, and vidalia onions add great texture and flavor to the dish)</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-steps">
+                    <h3>Recipe Steps</h3>
+                    <ol class="list">
+                        <li>In a rice cooker, add half a cup of rice, a cup of water, a touch of oil, and a pinch of salt. Cook the rice. Tip:
+                            if there are tough frozen veggies, such as broccoli, you might want to add the frozen veggies to the integrated
+                            steamer basket.</li>
+                        <li>On high medium heat on your stovetop, in a frying pan, add your chosen oil. Add some milk if desired. Then, scramble
+                            the eggs.</li>
+                        <li>Before the eggs are fully done, add the frozen vegetables. Add fresh vegetables when required so they are fully
+                            cooked by the end.</li>
+                        <li>(Optional) Add the additional protein when required so they are fully cooked by the end.</li>
+                        <li>Once the rice is done, add it to the pan. Poor your desired amount of Soy Sauce. Stir well. </li>
+                        <li>(Optional) After that, add your desired amount of additional sauce. Stir well.</li>
+                        <li>Let the fried rice cook until it is no longer visibly oily and the dish is nice and hot, with the vegetables fully
+                            cooked.</li>
+                        <li>Plate the fried rice. Enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Additional Food Images</h3>
+            <div class="recipe-photos">
+            <img class="pic3" src="images/dead-simple-fried-rice-1.jpg" width="200" alt="Dead Simple Fried Rice packed for lunch">
+            <img class="pic2" src="images/dead-simple-fried-rice-2.jpg" width="200" alt="Another photo of the Dead Simple Fried Rice in a frying pan">
+            <img class="pic1" src="images/dead-simple-fried-rice-3.jpg" width="200" alt="An additional photo of the Dead Simple Fried Rice in a frying pan">
+            </div>
+            <!-- Tristan Goodell -->
+        </div>
+        <div class="recipe">
+            <h2 id="tofu">Mapo Tofu</h2>
+            <div class="tablet-recipe">
+                <div class="recipe-grid">
+                    <span>Origin: Chinese</span>
+                    <span>Source: Own Recipe</span>
+                    <span>Category: Main Dish</span>
+                </div>
+
+                <div class="recipe-img"><img src="images/mapo_tofu.jpg" width="400" alt=""></div>
+                <p>Need something smooth and spicy? Mapo Tofu is a simple tofu dish from Sichuan China. It's great over rice and easy to
+                    prep/save for college students! This recipe is for people who want to try authentic Chinese food but do not have
+                    Sichuan spices to use.
+                </p>
+            </div>
+
+            <div class="like-container">
+                <button id="likeButton3" onclick="toggleLike(2)">Like</button>
+                <span id="likeCount3">0</span>
+            </div>
+
+            <div class="desktop-recipe-lists">
+                <div class="recipe-ingredients">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="list">
+                        <li>1 pack silken tofu</li>
+                        <li>2 green onions, thinly slice</li>
+                        <li>1/2 lb ground pork</li>
+                        <li>1 pack mapo tofu sauce (store bought)</li>
+                        <li>3 cloves minced garlic</li>
+                        <li>Soy sauce</li>
+                        <li>2 tbsp cooking oil</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-steps">
+                    <h3>Recipe Steps</h3>
+                    <ol class="list">
+                        <li>Brown pork in wok with oil for 4-5 minutes</li>
+                        <li>Add sauce and garlic, stir fry for 2 minutes</li>
+                        <li>Add tofu and mix lightly as to not break up the tofu too much, until heated through</li>
+                        <li>Add soy sauce, green onion and dish up</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Additional Food Images</h3>
+            <div class="recipe-photos">
+            <img class="pic3" src="images/ground_pork.jpeg" width="200" alt="Browning ground pork in wok">
+            <img class="pic2" src="images/add_tofu.jpeg" width="200" alt="Adding tofu and sauce to the wok">
+            <img class="pic1" src="images/mapo_tofu_mix.jpg" width="200" alt="Mixing tofu in wok">
+            </div>
+            <!-- Karen Koo, Patrick Zhu -->
+        </div>
+        <div class="recipe">
+            <h2 id="crunchwrap">Crunchwrap Supreme</h2>
+            <div class="tablet-recipe">
+                <div class="recipe-grid">
+                    <span>Origin: Taco Bell (Fake Mexican)</span>
+                    <span>Source: Taco Bell Website</span>
+                    <span>Category: Comfort Dish</span>
+                </div>
+
+                <div class="recipe-img"><img src="images/Crunchwrap_Supreme.png" width="400" alt=""></div>
+                <p>Despite the noticeable price increase attributed to inflation, I'm an avid Taco Bell fan. There's an undeniable
+                    satisfaction in indulging in a Crunchwrap Supreme whenever hunger strikes. Fusing a traditional Mexican taco with a
+                    generously sized flattened burrito creates a symphony of flavors that resonates perfectly with my taste buds. The
+                    mere thought of it sets my stomach on a journey of anticipation, as each bite combines the comforting essence of
+                    familiar ingredients in a novel and exciting way. Yo quiero Taco Bell.
+                </p>
+            </div>
+
+            <div class="like-container">
+                <button id="likeButton4" onclick="toggleLike(3)">Like</button>
+                <span id="likeCount4">0</span>
+            </div>
+
+            <div class="desktop-recipe-lists">
+                <div class="recipe-ingredients">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="list">
+                        <li>Tortilla</li>
+                        <li>Ground Beef</li>
+                        <li>Circular taco shell</li>
+                        <li>Cheese</li>
+                        <li>Lettuce</li>
+                        <li>Sour cream</li>
+                        <li>Melted cheese</li>
+                        <li>Diced tomatoes</li>
+                        <li>Taco Bell seasoning</li>
+                        <li>Cheese sauce</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-steps">
+                    <h3>Recipe Steps</h3>
+                    <ol class="list">
+                        <li>Make the ground beef with taco seasoning, season it well with spices and Taco Bell spices from Target</li>
+                        <li>Lay the tortilla on the grill and put cheese sauce on top of it, smooth it out in a circular motion, and be generous with the amount</li>
+                        <li>Next, put the circular crunch taco shell on top of it while adding a generous amount of sour cream on it, don't be shy!</li>
+                        <li>Next add your seasoned to ground beef onto the tortilla</li>
+                        <li>Add your diced tomatoes, lettuce, and cheese</li>
+                        <li>Wrap your Crunchwrap pentagon style and then grill it on a hot pan for about 4 minutes on medium heat, both sides</li>
+                        <li>Take it off the pan and then cut it in half and you have your Crunchwrap supreme</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Additional Food Images</h3>
+            <div class="recipe-photos">
+            <img class="pic3" src="images/Taco_Bell_Beef.png" width="200" alt="Cook the beef on high heat while adding Taco Bell seasoning and let it simmer for 10 minutes on low">
+            <img class="pic2" src="images/Taco_Bell_Beef_Cheese.png" width="200" alt="Example of the assembled Crunchwrap supreme with toppings on the tortilla">
+            <img class="pic1" src="images/Crunchwrap.png" width="200" alt="Finished product of a Crunchwrap">
+            </div>
+            <!-- Audrey Eng -->
+        </div>
+        <div class="recipe">
+            <h2 id="cookies">Double Chocolate Cookies</h2>
+            <div class="tablet-recipe">
+                <div class="recipe-grid">
+                <span>Origin: Michigan</span>
+                <span>Source: Family Recipe</span>
+                <span>Category: Dessert</span>
+                </div>
+
+                <div class="recipe-img"><img src="images/double_chocolate_cookies.png" width="400" alt=""></div>
+                <p>My daughter learned to make these cookies at a baking camp at Zingermanns and has tweaked the recipe to fit the taste
+                    buds of her siblings. They are extremely sugary so the salt helps to balance it. Note, these cookies are best eaten
+                    very quickly.
+                </p>
+            </div>
+
+            <div class="like-container">
+                <button id="likeButton5" onclick="toggleLike(4)">Like</button>
+                <span id="likeCount5">0</span>
+            </div>
+
+            <div class="desktop-recipe-lists">
+                <div class="recipe-ingredients">
+                    <h3>Recipe Ingredients</h3>
+                    <ul class="list">
+                        <li>Unsalted butter</li>
+                        <li>Granulated sugar</li>
+                        <li>Packed light or dark brown sugar</li>
+                        <li>Large egg</li>
+                        <li>Pure vanilla extract</li>
+                        <li>Semi-sweet chocolate chunks (melted)</li>
+                        <li>All-purpose flour</li>
+                        <li>Natural unsweetened cocoa powder</li>
+                        <li>Baking soda</li>
+                        <li>Salt</li>
+                        <li>Semi-sweet chocolate chunks</li>
+                    </ul>
+                </div>
+
+                <div class="recipe-steps">
+                    <h3>Recipe Steps</h3>
+                    <ol class="list">
+                        <li>In a mixing bowl cream together the butter, granulated sugar, and brown sugar</li>
+                        <li>Add the egg and vanilla extract and beat well</li>
+                        <li>Add the melted chocolate</li>
+                        <li>In a separate bowl combine the flour, baking soda, cocoa powder and salt</li>
+                        <li>Combine the wet and dry ingredients</li>
+                        <li>Add the unmelted chocolate chunks</li>
+                        <li>Form 15 cookies and place on a baking sheet</li>
+                        <li>Cook for 12 to 13 minutes at 350 degrees</li>
+                    </ol>
+                </div>
+            </div>
+
+            <h3>Additional Food Images</h3>
+            <div class="recipe-photos">
+            <img class="pic3" src="images/double_chocolate_chips.png" width="200" alt="A small pile of chocolate chips">
+            <img class="pic2" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/chocolate-d9ba778.jpg?quality=90&webp=true&resize=600,545" width="200" alt="Chocolate melting in a boiler">
+            <img class="pic1" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Brown_sugar_examples.JPG" width="200" alt="Brown sugar in three different shades of darkness">
+            </div>
+            <!-- Colleen van Lent -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Derek Yang</p>
+            <p>dereky@umich.edu</p>
+            <p><a href="#body">Back to Top</a></p>
+        </div>
+    </footer>
+    <script src="js/like.js"></script>
+</body>
+</html>
